@@ -9,6 +9,18 @@
         h2{
             text-align: center;
         }
+
+        label {
+        padding-right: 10px;
+        }
+
+        input[type="email"]:valid{
+            background-color: rgb(185, 255, 209);
+        }
+        input[type="email"]:invalid{
+            background-color: rgba(255, 109, 109, 0.87);
+        }
+
     </style>
 </head>
 <body>
@@ -25,6 +37,12 @@
 
             <label for="naissance">Date de naissance</label>
             <input type="date" name="naissance" min="1923-01-01" max="2023-01-01" required>
+
+            <label for="mail">Adresse Mail</label>
+            <input type="email" name="mail" placeholder="Adresse Mail" required>
+
+
+
         </fieldset>
 
 
